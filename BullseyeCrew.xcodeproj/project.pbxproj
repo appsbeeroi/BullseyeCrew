@@ -6,8 +6,46 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7EA46D6E2EFAB5DF00FA73D5 /* NotificationService.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7EA46D672EFAB5DF00FA73D5 /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7EA46D762EFAB64900FA73D5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7EA46D752EFAB64900FA73D5 /* Alamofire */; };
+		7EA46D792EFAB79400FA73D5 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 7EA46D782EFAB79400FA73D5 /* FirebaseCore */; };
+		7EA46D7B2EFAB79400FA73D5 /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 7EA46D7A2EFAB79400FA73D5 /* FirebaseInAppMessaging-Beta */; };
+		7EA46D7D2EFAB79400FA73D5 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 7EA46D7C2EFAB79400FA73D5 /* FirebaseMessaging */; };
+		7EA46D7F2EFAB79400FA73D5 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 7EA46D7E2EFAB79400FA73D5 /* FirebaseRemoteConfig */; };
+		7EA46D812EFAB95F00FA73D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EA46D802EFAB95F00FA73D5 /* GoogleService-Info.plist */; };
+		7EA46D852EFAC21100FA73D5 /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 7EA46D842EFAC21100FA73D5 /* OneSignalExtension */; };
+		7EA46D872EFAC21100FA73D5 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 7EA46D862EFAC21100FA73D5 /* OneSignalFramework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7EA46D6C2EFAB5DF00FA73D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E7129652EC473A300A620AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EA46D662EFAB5DF00FA73D5;
+			remoteInfo = NotificationService;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7EA46D732EFAB5DF00FA73D5 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7EA46D6E2EFAB5DF00FA73D5 /* NotificationService.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		7E71296D2EC473A300A620AF /* BullseyeCrew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullseyeCrew.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EA46D672EFAB5DF00FA73D5 /* NotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EA46D802EFAB95F00FA73D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -17,6 +55,13 @@
 				Info.plist,
 			);
 			target = 7E71296C2EC473A300A620AF /* BullseyeCrew */;
+		};
+		7EA46D722EFAB5DF00FA73D5 /* Exceptions for "NotificationService" folder in "NotificationService" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 7EA46D662EFAB5DF00FA73D5 /* NotificationService */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -29,6 +74,14 @@
 			path = BullseyeCrew;
 			sourceTree = "<group>";
 		};
+		7EA46D682EFAB5DF00FA73D5 /* NotificationService */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7EA46D722EFAB5DF00FA73D5 /* Exceptions for "NotificationService" folder in "NotificationService" target */,
+			);
+			path = NotificationService;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +89,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EA46D7D2EFAB79400FA73D5 /* FirebaseMessaging in Frameworks */,
+				7EA46D792EFAB79400FA73D5 /* FirebaseCore in Frameworks */,
+				7EA46D762EFAB64900FA73D5 /* Alamofire in Frameworks */,
+				7EA46D7B2EFAB79400FA73D5 /* FirebaseInAppMessaging-Beta in Frameworks */,
+				7EA46D872EFAC21100FA73D5 /* OneSignalFramework in Frameworks */,
+				7EA46D7F2EFAB79400FA73D5 /* FirebaseRemoteConfig in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EA46D642EFAB5DF00FA73D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EA46D852EFAC21100FA73D5 /* OneSignalExtension in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +112,9 @@
 		7E7129642EC473A300A620AF = {
 			isa = PBXGroup;
 			children = (
+				7EA46D802EFAB95F00FA73D5 /* GoogleService-Info.plist */,
 				7E71296F2EC473A300A620AF /* BullseyeCrew */,
+				7EA46D682EFAB5DF00FA73D5 /* NotificationService */,
 				7E71296E2EC473A300A620AF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				7E71296D2EC473A300A620AF /* BullseyeCrew.app */,
+				7EA46D672EFAB5DF00FA73D5 /* NotificationService.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,20 +138,51 @@
 				7E7129692EC473A300A620AF /* Sources */,
 				7E71296A2EC473A300A620AF /* Frameworks */,
 				7E71296B2EC473A300A620AF /* Resources */,
+				7EA46D732EFAB5DF00FA73D5 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7EA46D6D2EFAB5DF00FA73D5 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				7E71296F2EC473A300A620AF /* BullseyeCrew */,
 			);
 			name = BullseyeCrew;
 			packageProductDependencies = (
+				7EA46D752EFAB64900FA73D5 /* Alamofire */,
+				7EA46D782EFAB79400FA73D5 /* FirebaseCore */,
+				7EA46D7A2EFAB79400FA73D5 /* FirebaseInAppMessaging-Beta */,
+				7EA46D7C2EFAB79400FA73D5 /* FirebaseMessaging */,
+				7EA46D7E2EFAB79400FA73D5 /* FirebaseRemoteConfig */,
+				7EA46D862EFAC21100FA73D5 /* OneSignalFramework */,
 			);
 			productName = BullseyeCrew;
 			productReference = 7E71296D2EC473A300A620AF /* BullseyeCrew.app */;
 			productType = "com.apple.product-type.application";
+		};
+		7EA46D662EFAB5DF00FA73D5 /* NotificationService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EA46D6F2EFAB5DF00FA73D5 /* Build configuration list for PBXNativeTarget "NotificationService" */;
+			buildPhases = (
+				7EA46D632EFAB5DF00FA73D5 /* Sources */,
+				7EA46D642EFAB5DF00FA73D5 /* Frameworks */,
+				7EA46D652EFAB5DF00FA73D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				7EA46D682EFAB5DF00FA73D5 /* NotificationService */,
+			);
+			name = NotificationService;
+			packageProductDependencies = (
+				7EA46D842EFAC21100FA73D5 /* OneSignalExtension */,
+			);
+			productName = NotificationService;
+			productReference = 7EA46D672EFAB5DF00FA73D5 /* NotificationService.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,6 +197,9 @@
 					7E71296C2EC473A300A620AF = {
 						CreatedOnToolsVersion = 26.0.1;
 					};
+					7EA46D662EFAB5DF00FA73D5 = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
 				};
 			};
 			buildConfigurationList = 7E7129682EC473A300A620AF /* Build configuration list for PBXProject "BullseyeCrew" */;
@@ -107,18 +211,32 @@
 			);
 			mainGroup = 7E7129642EC473A300A620AF;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				7EA46D742EFAB64900FA73D5 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				7EA46D772EFAB79400FA73D5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				7EA46D832EFAC21100FA73D5 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7E71296E2EC473A300A620AF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				7E71296C2EC473A300A620AF /* BullseyeCrew */,
+				7EA46D662EFAB5DF00FA73D5 /* NotificationService */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7E71296B2EC473A300A620AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EA46D812EFAB95F00FA73D5 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EA46D652EFAB5DF00FA73D5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,7 +253,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7EA46D632EFAB5DF00FA73D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7EA46D6D2EFAB5DF00FA73D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EA46D662EFAB5DF00FA73D5 /* NotificationService */;
+			targetProxy = 7EA46D6C2EFAB5DF00FA73D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		7E7129762EC473A500A620AF /* Debug */ = {
@@ -262,12 +395,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BullseyeCrew/BullseyeCrew.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BullseyeCrew/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app needs access to save photos to your photo library.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver personalized ads and improve your experience.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -280,7 +416,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bullseye.crew.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -303,12 +439,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BullseyeCrew/BullseyeCrew.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BullseyeCrew/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app needs access to save photos to your photo library.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver personalized ads and improve your experience.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -321,7 +460,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bullseye.crew.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -332,6 +471,76 @@
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		7EA46D702EFAB5DF00FA73D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotificationService/NotificationService.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationService/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotificationService;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bullseye.crew.app.NotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7EA46D712EFAB5DF00FA73D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotificationService/NotificationService.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationService/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotificationService;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bullseye.crew.app.NotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -360,7 +569,81 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		7EA46D6F2EFAB5DF00FA73D5 /* Build configuration list for PBXNativeTarget "NotificationService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EA46D702EFAB5DF00FA73D5 /* Debug */,
+				7EA46D712EFAB5DF00FA73D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7EA46D742EFAB64900FA73D5 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.11.0;
+			};
+		};
+		7EA46D772EFAB79400FA73D5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.7.0;
+			};
+		};
+		7EA46D832EFAC21100FA73D5 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-iOS-SDK";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.15;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7EA46D752EFAB64900FA73D5 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EA46D742EFAB64900FA73D5 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		7EA46D782EFAB79400FA73D5 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EA46D772EFAB79400FA73D5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		7EA46D7A2EFAB79400FA73D5 /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EA46D772EFAB79400FA73D5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		7EA46D7C2EFAB79400FA73D5 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EA46D772EFAB79400FA73D5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		7EA46D7E2EFAB79400FA73D5 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EA46D772EFAB79400FA73D5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		7EA46D842EFAC21100FA73D5 /* OneSignalExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EA46D832EFAC21100FA73D5 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalExtension;
+		};
+		7EA46D862EFAC21100FA73D5 /* OneSignalFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EA46D832EFAC21100FA73D5 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalFramework;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7E7129652EC473A300A620AF /* Project object */;
 }

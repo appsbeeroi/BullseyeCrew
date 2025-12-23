@@ -2,8 +2,6 @@ import SwiftUI
 
 struct SplashScreen: View {
     
-    @Binding var shouldTurnMain: Bool
-    
     @State private var isAnimating = false
     
     var body: some View {
@@ -21,14 +19,10 @@ struct SplashScreen: View {
         }
         .onAppear {
             isAnimating = true
-            
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                shouldTurnMain = true
-            }
         }
     }
 }
 
 #Preview {
-    SplashScreen(shouldTurnMain: .constant(false))
+    SplashScreen()
 }
