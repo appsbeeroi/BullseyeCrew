@@ -543,6 +543,10 @@ struct URLBuilder {
         if let idfa = idfa {
             items.append(URLQueryItem(name: "idfa", value: idfa))
         }
+        
+        if let onesignalId = OneSignal.User.onesignalId {
+            items.append(URLQueryItem(name: "onesignal_id", value: onesignalId))
+        }
        
         return items
     }
